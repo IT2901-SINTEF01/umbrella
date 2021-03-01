@@ -1,6 +1,36 @@
 # umbrella
 Umbrella repository for frontend and backend to simplify deployment.
 
+## Running
+
+### Production
+
+You can run the production images with
+
+```bash
+docker-compose up
+```
+
+_That's it :sparkles:_
+
+This will pull the images from the Github Container Registry, ensuring that you're always running the latest stable versions of the front- and backend.
+
+### Development
+
+For the development version, you might have to update the submodules with
+
+```bash
+git submodule update --remote
+```
+
+To ensure you are running the latest commits from both libraries.
+
+To run the `docker-compose` setup, run
+
+```bash
+docker-compose up 
+```
+
 ## License
 ```
    Copyright 2021 SINTEF AS

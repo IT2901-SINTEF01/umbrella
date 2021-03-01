@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  backend:
+    image: ghcr.io/it2901-sintef01/backend:latest
+    ports:
+      - "5000:80"
+  frontend:
+    image: ghcr.io/it2901-sintef01/frontend:latest
+    ports:
+      - "80:80"
